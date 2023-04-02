@@ -1,14 +1,12 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "./page.module.css";
-import Paragraph from "./components/ui/Paragraph";
-import LargeHeading from "./components/ui/LargeHeading";
+import Paragraph from "../components/ui/Paragraph";
+import LargeHeading from "../components/ui/LargeHeading";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="bg-red-500">
+    <main className="dark:bg-red-500">
       <LargeHeading size="lg">Large Variant</LargeHeading>
       <LargeHeading>Default Variant</LargeHeading>
       <Paragraph>
