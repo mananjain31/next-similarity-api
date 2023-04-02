@@ -8,7 +8,7 @@ const paragraphVariants = cva(
     variants: {
       size: {
         default: "text-base sm:text-lg",
-        small: "text-sm sm:text-base",
+        sm: "text-sm sm:text-base",
       },
     },
     defaultVariants: {
@@ -22,15 +22,13 @@ interface ParagraphProps
     VariantProps<typeof paragraphVariants> {}
 
 const Paragraph = forwardRef<HTMLParagraphElement, ParagraphProps>(
-  function Paragraph({ className, size, children, ...props }, ref) {
+  function Paragraph({ className, size, ...props }, ref) {
     return (
       <p
         ref={ref}
         {...props}
         className={cn(paragraphVariants({ className, size }))}
-      >
-        {children}
-      </p>
+      />
     );
   }
 );
