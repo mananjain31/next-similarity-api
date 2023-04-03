@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="dark:bg-red-500">
+    <main>
       <LargeHeading size="lg">Large Variant</LargeHeading>
       <LargeHeading>Default Variant</LargeHeading>
       <Paragraph>
